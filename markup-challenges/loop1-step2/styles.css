@@ -1,0 +1,120 @@
+* {
+
+  text-decoration: none;
+}
+
+body {
+  background: url(img/background.jpg) no-repeat center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  margin: 130px auto 0;
+  width: 438px;
+
+}
+
+.card {
+  overflow: hidden;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.steps {
+  padding: 17px ;
+  text-align: center;
+}
+
+.steps-item {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 0px 3px;
+  background-color: #DFDFE0;
+}
+
+
+.steps-item.active {
+  background-color: #aaa;
+}
+
+.checkout-title {
+  margin-top: 3px;
+  font-size: 28px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.visa {
+  background: url(img/visa.svg);
+}
+.mastercard {
+  background: url(img/mastercard.svg);
+}
+.maestro {
+  background: url(img/maestro.svg);
+}
+.card-options-item {
+    display: block;
+    position: relative;
+    padding: 26px 20px 26px 119px;
+    border-top: 1px solid #dedede;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 38px;
+    background-size: 50px;
+    color: #ababaa;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+
+.card-options-item:hover {
+  background-color: #efefef;
+}
+
+.card-options-item.active {
+  color: #000;
+}
+
+.card-options-item.active::after {
+  position: absolute;
+  content: " ";
+  top: 24px;
+  right: 20px;
+  background: url(img/check.svg) no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+
+.button-next {
+  display: block;
+  padding: 24px 0px 18px;
+  color: #fff;
+  background: #598bdd;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  transition: all 0.1s ease;
+}
+
+.button-next:hover {
+  background: #5c95f1;
+}
+
+.button-next:active {
+  transform: translateY(3px);
+}
+
+.button-next img {
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
