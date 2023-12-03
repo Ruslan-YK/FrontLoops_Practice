@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #16A085;
+  font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after, .clearfix::before {
+  content: '';
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.wrapper {
+  width: 600px;
+  padding: 39px 70px 175px;
+  margin: 243px auto 0;
+  border-radius: 4px;
+  box-shadow: 0 3px 12px 6px rgba(0, 0, 0, 0.4);
+  background-image: url(img/bicycle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 184px;
+  background-color: #fff;
+}
+
+.order-info {
+  margin-bottom: 15px;
+}
+
+.profile-link {
+  display: inline-block;
+  float: right;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.profile-link:hover {
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.profile-icon {
+  vertical-align: middle;
+}
+.order-title {
+  margin-top: 0;
+  font-size: 22px;
+  line-height: 46px;
+  margin-bottom: 8px;
+}
+
+.order-text {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 0;
+}
+
+.order-details {
+  width: 100%;
+}
+
+.order-item-name {
+  padding: 9px 0 18px;
+  font-weight: 500;
+  color: #5c5c5c;
+}
+
+tfoot .order-item-name {
+  font-weight: 700;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.order-price{
+  padding-top: 6px;
+  font-size: 20px;
+  vertical-align: top;
+  text-align: right;
+  color: #000;
+  font-weight: 700;
+}
