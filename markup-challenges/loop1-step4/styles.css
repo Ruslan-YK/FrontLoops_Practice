@@ -1,0 +1,196 @@
+html {
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to bottom, #cfdde8, #748fa5);
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after, .clearfix::before {
+  content: '';
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 100px auto 0;
+  background-color: #fff;
+}
+
+.chat-title {
+  position: relative;
+  padding: 20px;
+  background-color: #6A96D8;
+  color: #fff;
+}
+
+.chat-title-text {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.chat-title-text::before{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  margin-top: -5px;
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.chat-close-link {
+  position: absolute;
+  opacity: 0.7;
+  right: 15px;
+  top: 50%;
+  margin-top: -12px;
+  transition: all 0.3s ease;
+}
+
+.chat-close-link:hover {
+  opacity: 1;
+}
+
+
+.close-link-img {
+  vertical-align: middle;
+}
+
+.chat {
+  padding: 20px;
+}
+
+.chat  hr {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.date-divider {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.date-divider-text {
+  position: absolute;
+  padding: 5px 10px;
+  left: 50%;
+  top: 50%;
+  color: #e0e0e0;
+  font-size: 13px;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  font-weight: 500;
+
+}
+
+.message {
+  padding-bottom: 18px;
+}
+
+.message-time {
+  color: #acacac;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.message-text {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  max-width: 270px;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.message-text::before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.message-sender .message-text {
+  background-color: #e6edf6;
+}
+
+.message-sender .message-text::before {
+  border-top: 5px solid #e6edf6;
+  left: -4px;
+}
+
+.message-recipiend .message-time {
+  text-align: right;
+}
+
+.message-recipiend .message-text {
+  background-color: #F2F2F2;
+  float: right;
+}
+
+.message-recipiend .message-text::before {
+  right: -4px;
+  border-top: 5px solid #F2F2F2;
+}
+
+.message-alert-danger .message-text {
+  float: right;
+  background-color: #FFC2C1;
+  font-size: 13px;
+}
+
+
+.chat-compose-input {
+  width: 80%;
+  padding: 10px 0;
+  border: none;
+  outline: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.chat-compose-button {
+  width: 20%;
+  border: none;
+  background-color: transparent;
+  padding: 4px;
+  padding-right: 0;
+  text-align: right;
+  color: #6A96D8;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
