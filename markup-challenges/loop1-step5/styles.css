@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url(img/background.jpg) no-repeat center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 100px auto 0;
+  padding: 65px 40px 16px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.cities {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.cities::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 25px;
+  left: 50%;
+  width: 30px;
+  height: 5px;
+  background-color: #d3e6f4;
+  transform: translateX(-50%);
+}
+
+.city-name-short {
+  margin-bottom: 9px;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #3B8ACF;
+  font-size: 50px;
+  line-height: 36px;
+}
+
+.city-name-full {
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.city-from {
+  float: left;
+}
+
+.city-to {
+  float: right;
+}
+
+.ticket-details {
+  overflow: hidden;
+}
+
+.ticket-info {
+  width: 35%;
+  float: left;
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+
+.ticket-info-small {
+  width: 30%;
+}
+
+.ticket-info-label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.ticket-info-value {
+  font-size: 16px;
+}
+
+.ticket-qr {
+  float: right;
+  width: 150px;
+}
+
+.ticket-qr img {
+  max-width: 100%;
+  height: auto;
+}
