@@ -1,5 +1,6 @@
 # FrontLoops_Practice
-<div><a href="markup-challenges/loop1-step1">loop1-step1</a></div>
-<div><a href="markup-challenges/loop1-step2">loop1-step2</a></div>
-<div><a href="markup-challenges/loop1-step3">loop1-step3</a></div>
-<div><a href="markup-challenges/loop1-step4">loop1-step4</a></div>
+<div><a href="markup-challenges/loop1-step1">Loop1-step1</a></div>
+<div><a href="markup-challenges/loop1-step2">Loop1-step2</a></div>
+<div><a href="markup-challenges/loop1-step3">Loop1-step3</a></div>
+<div><a href="markup-challenges/loop1-step4">Loop1-step4</a></div>
+<div><a href="markup-challenges/loop1-step5">Loop1-step5</a></div>
