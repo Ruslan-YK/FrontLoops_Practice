@@ -1,0 +1,179 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  background: #F7CD75;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h2 {
+  position: relative;
+  margin: 0 0 35px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+hr {
+  margin: 42px 0;
+  height: 1px;
+  border: none;
+  background: #dedede;
+}
+
+.clearfix::after, .clearfix::before {
+  display: table;
+  content: '';
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 100px auto;
+  box-shadow: 0 15px 17px -10px rgba(0, 0,0, 0.1);
+}
+
+.wallets-box {
+  padding: 45px 40px;
+  float: left;
+  width: 300px;
+  height: 450px;
+  overflow: auto;
+  background: #f2f2f2;
+}
+
+.add-wallet-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wallets-list-item {
+  display: block;
+  padding: 65px 10px 10px;
+  margin: 0 0 28px;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  background: #fff no-repeat 10px 10px;
+  background-size: 60px 40px;
+  color: #727272;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.wallets-list-item:last-child {
+  margin: 0;
+}
+
+.wallets-list-item:hover, .wallets-list-item.active {
+  box-shadow: 0 0 0 2px #8793c6;
+}
+
+.wallets-list-item.visa {
+  background-image: url(img/visa.svg);
+}
+
+.wallets-list-item.mastercard {
+  background-image: url(img/mastercard.svg);
+}
+
+.wallets-list-item.maestro {
+  background-image: url(img/maestro.svg);
+}
+
+.card-number {
+  margin: 0 0 5px;
+}
+
+.card-expiry-date {
+  font-size: 0.8rem;
+}
+
+.wallet-details-box {
+  width: 500px;
+  height: 450px;
+  overflow: auto;
+  padding: 45px 40px;
+  float: left;
+  background: #fff;
+}
+
+.current-balance-amount {
+  font-weight: bold;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 0;
+}
+
+.transactions-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.transaction-item {
+  position: relative;
+  padding: 0 0 0 50px;
+  margin: 0 0 40px;
+}
+
+.transaction-item:last-child {
+  margin: 0;
+}
+
+.transaction-item::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dedede;
+  margin-top: -10px;
+  border-radius: 50%;
+  background: no-repeat center;
+  background-size: 12px;
+}
+
+.transaction-item--expense::before {
+  background-image: url(img/minus.svg);
+}
+
+.transaction-item--income::before {
+  background-image: url(img/plus.svg);
+}
+
+.transaction-item-name {
+  margin: 0 0 5px;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.transaction-item-details {
+  color: #b5b5b5;
+  font-size: 0.8rem;
+}
+
+.transaction-item-amoun {
+  position: absolute;
+  top: 50%; right: 0;
+  font-weight: bold;
+  transform: translateY(-50%);
+}
+
+.transaction-item--expense .transaction-item-amoun {
+  color: #8797c6;
+}
+
+.transaction-item--income .transaction-item-amoun {
+  color: #8ace5e;
+}
