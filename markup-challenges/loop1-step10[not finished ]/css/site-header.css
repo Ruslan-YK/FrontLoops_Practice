@@ -1,0 +1,11 @@
+.site-header {
+  text-align: center;
+}
+
+.site-header__logo {
+  display: inline-block;
+}
+
+.site-header__logo-img {
+  width: 35px;
+}
